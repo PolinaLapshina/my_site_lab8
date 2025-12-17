@@ -67,7 +67,7 @@ p {
 }
 
 /* 4. ШАПКА И НАВИГАЦИЯ */
-header {
+/* header {
     background-color: #ffffff;
     padding: 20px 0;
     margin: 25px 0 40px;
@@ -147,7 +147,7 @@ li {
 
 li::marker {
     color: #48bb78;
-}
+} */
 
 /* 8. КАРТОЧКИ (БЛОКИ) */
 .portfolio-item {

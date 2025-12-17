@@ -1,0 +1,336 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.7;
+    color: #2d3748;
+    background-color: #f8faf9;
+    background-image: linear-gradient(to bottom right, #f8faf9, #f0f7f4);
+    min-height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    min-width: 1024px;
+}
+
+/* 3. ТИПОГРАФИЯ */
+h1 {
+    color: #1a4731;
+    font-size: 2.8rem;
+    margin: 40px 0 25px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #38a169;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+h2 {
+    color: #22543d;
+    font-size: 2rem;
+    margin: 35px 0 20px;
+    font-weight: 600;
+    position: relative;
+    padding-left: 15px;
+}
+
+h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 5px;
+    bottom: 5px;
+    width: 5px;
+    background-color: #48bb78;
+    border-radius: 3px;
+}
+
+h3 {
+    color: #2f855a;
+    font-size: 1.4rem;
+    margin: 25px 0 15px;
+    font-weight: 600;
+}
+
+p {
+    margin-bottom: 18px;
+    font-size: 1.05rem;
+}
+
+/* 4. ШАПКА И НАВИГАЦИЯ */
+header {
+    background-color: #ffffff;
+    padding: 20px 0;
+    margin: 25px 0 40px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(56, 161, 105, 0.1);
+    border: 1px solid #e2f0e9;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+nav a {
+    color: #2d3748;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    font-size: 1.05rem;
+    background-color: #f0f7f4;
+}
+
+nav a:hover {
+    background-color: #38a169;
+    color: white;
+    border-color: #38a169;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(56, 161, 105, 0.2);
+}
+
+nav a.active {
+    background-color: #48bb78;
+    color: white;
+    border-color: #48bb78;
+}
+
+main {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    margin-bottom: 40px;
+    border: 1px solid #e2f0e9;
+}
+
+/* 6. ИЗОБРАЖЕНИЯ */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin: 20px 0;
+    border: 2px solid #e2f0e9;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.01);
+}
+
+/* 7. СПИСКИ */
+ul, ol {
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+    padding-left: 10px;
+    position: relative;
+}
+
+li::marker {
+    color: #48bb78;
+}
+
+/* 8. КАРТОЧКИ (БЛОКИ) */
+.portfolio-item {
+    border: 2px solid #e2f0e9;
+    padding: 30px;
+    margin: 30px 0;
+    border-radius: 16px;
+    background-color: #f9fffc;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+}
+
+.portfolio-item:hover {
+    border-color: #48bb78;
+    box-shadow: 0 8px 25px rgba(72, 187, 120, 0.1);
+    transform: translateY(-3px);
+}
+
+.skills {
+    border: 2px solid #e2f0e9;
+    padding: 25px;
+    margin: 25px 0;
+    border-radius: 16px;
+    background-color: #f9fffc;
+}
+
+.contact-info {
+    border: 2px solid #e2f0e9;
+    padding: 30px;
+    margin: 30px 0;
+    border-radius: 16px;
+    background-color: #f9fffc;
+}
+
+.location {
+    border: 2px dashed #c6f6d5;
+    padding: 25px;
+    margin: 25px 0;
+    border-radius: 16px;
+    background-color: #f0fff4;
+}
+
+/* 9. ФОРМА ОБРАТНОЙ СВЯЗИ */
+.contact-form {
+    border: 2px solid #e2f0e9;
+    padding: 30px;
+    margin: 30px 0;
+    border-radius: 16px;
+    background-color: #f9fffc;
+}
+
+form {
+    margin: 25px 0;
+}
+
+form div {
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #2f855a;
+    font-size: 1.05rem;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 16px;
+    border: 2px solid #e2f0e9;
+    border-radius: 12px;
+    font-size: 1.05rem;
+    font-family: inherit;
+    background-color: #f9fffc;
+    transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: #48bb78;
+    background-color: white;
+    box-shadow: 0 0 0 3px rgba(72, 187, 120, 0.2);
+}
+
+/* 10. КНОПКИ */
+button, .btn {
+    background-color: #38a169;
+    color: white;
+    border: 2px solid #38a169;
+    padding: 16px 35px;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+button:hover, .btn:hover {
+    background-color: #2f855a;
+    border-color: #2f855a;
+    transform: translateY(-2px);
+    box-shadow: 0 7px 20px rgba(56, 161, 105, 0.25);
+}
+
+button:active, .btn:active {
+    transform: translateY(0);
+}
+
+/* 11. ССЫЛКИ */
+a {
+    color: #38a169;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+    border-bottom: 1px solid transparent;
+}
+
+a:hover {
+    color: #22543d;
+    border-bottom: 1px solid #38a169;
+}
+
+
+footer {
+    text-align: center;
+    margin: 50px 0 30px;
+    padding: 30px;
+    color: #718096;
+    border-top: 2px solid #e2f0e9;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.03);
+}
+
+footer p {
+    margin-bottom: 15px;
+}
+
+/* 13. УТИЛИТЫ */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mt-20 { margin-top: 20px; }
+.mb-20 { margin-bottom: 20px; }
+.mt-40 { margin-top: 40px; }
+.mb-40 { margin-bottom: 40px; }
+
+.highlight {
+    background-color: #f0fff4;
+    padding: 3px 8px;
+    border-radius: 6px;
+    color: #22543d;
+    border: 1px solid #c6f6d5;
+}
+
+
+/* 16. СКРОЛЛБАР (для современных браузеров) */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #a0d9b4;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #48bb78;
+}

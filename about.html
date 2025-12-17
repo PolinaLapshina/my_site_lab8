@@ -22,39 +22,97 @@
     
     <main>
         <h1>Обо мне</h1>
-        <img src="images/photo.jpg" alt="Портрет Лапшиной Полины" width="300">
         
-        <h2>Добрый день! Меня зовут Полина</h2>
-        <p>Я веб-дизайнер с более чем 5-летним опытом создания современных и функциональных сайтов. 
-        Специализируюсь на дизайне, frontend-разработке.</p>
-        
-        <h2>Образование</h2>
-        <h3>Высшее образование</h3>
-        <p>НРоссийский Государственный Университет им. А.Н.Косыгина (Технологии, Дизайн, Искусство), факультет информационных технологий и цифровой трансформации(2024-2028)</p>
-        
-        <h3>Дополнительные курсы</h3>
-        <ul>
-            <li>Курс «Дизайнер интерфейсов» (ГУД Дубна, 2024)</li>
-            <li>Графический дизайн: Дизайнер Инфографики (DontName, 2022)</li>
-            <li>Трек Медиапроектируй (Селигер, 2025)</li>
-        </ul>
-        
-        <h2>Ключевые навыки</h2>
-        <div class="skills">
-            <h3>Frontend</h3>
-            <p>HTML5, CSS3, JavaScript</p>
-            
-            <h3>Дизайн</h3>
-            <p>Проектирование сайтов, разработка логотипов, печатной продукции, основы UX/UI дизайна</p>
-            
-            <h3>Инструменты</h3>
-            <p>Figma, Illustrator, Photoshop, Wix, Canva, Tilda</p>
+        <div class="about-header">
+            <img src="images/photo.jpg" alt="Портрет Лапшиной Полины" width="300" class="profile-photo">
+            <div class="about-intro">
+                <h2>Добрый день! Меня зовут Полина</h2>
+                <p>Я веб-дизайнер с более чем 5-летним опытом создания современных и функциональных сайтов. 
+                Специализируюсь на дизайне, frontend-разработке.</p>
+            </div>
         </div>
+        
+        <section class="education">
+            <h2>Образование</h2>
+            
+            <div class="education-item">
+                <h3>Высшее образование</h3>
+                <p><strong>Российский Государственный Университет им. А.Н.Косыгина</strong><br>
+                Факультет информационных технологий и цифровой трансформации<br>
+                2024-2028 гг.</p>
+            </div>
+            
+            <div class="education-item">
+                <h3>Дополнительные курсы</h3>
+                <ul>
+                    <li>Курс «Дизайнер интерфейсов» (ГУД Дубна, 2024)</li>
+                    <li>Графический дизайн: Дизайнер Инфографики (DontName, 2022)</li>
+                    <li>Трек Медиапроектируй (Селигер, 2025)</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="skills-section">
+            <h2>Ключевые навыки</h2>
+            
+            <div class="skills">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>Адаптивная верстка</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Дизайн</h3>
+                    <ul>
+                        <li>Проектирование сайтов</li>
+                        <li>Разработка логотипов</li>
+                        <li>Печатная продукция</li>
+                        <li>Основы UX/UI дизайна</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Инструменты</h3>
+                    <ul>
+                        <li>Figma</li>
+                        <li>Adobe Illustrator</li>
+                        <li>Adobe Photoshop</li>
+                        <li>Wix</li>
+                        <li>Canva</li>
+                        <li>Tilda</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section class="experience">
+            <h2>Опыт работы</h2>
+            <div class="experience-item">
+                <h3>Веб-дизайнер | Фриланс</h3>
+                <p><em>2019 - настоящее время</em></p>
+                <ul>
+                    <li>Разработка дизайна для 50+ веб-сайтов</li>
+                    <li>Создание логотипов и фирменного стиля</li>
+                    <li>Консультирование клиентов по UX/UI</li>
+                </ul>
+            </div>
+        </section>
     </main>
     
     <footer>
-        <p><a href="index.html">← Вернуться на главную</a></p>
-        <p>© 2025 Полина Лапшина</p>
+        <div class="footer-content">
+            <p><a href="index.html">← Вернуться на главную</a></p>
+            <p>© <span id="current-year">2025</span> Полина Лапшина</p>
+            <p>Email: <a href="mailto:polina@example.com">polina@example.com</a></p>
+        </div>
     </footer>
+    
+
+    <script src="js/script.js"></script>
 </body>
 </html>

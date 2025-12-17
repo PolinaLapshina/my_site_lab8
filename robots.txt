@@ -6,4 +6,4 @@ Disallow: /js/
 Disallow: /images/
 
 # Путь к карте сайта
-Sitemap: https://PolinaLapshina.github.io/my_site_lab8/sitemap.xml
+Sitemap: https://polinalapshina.github.io/my_site_lab8/sitemap.xml

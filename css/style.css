@@ -300,7 +300,7 @@ footer p {
     margin-bottom: 15px;
 }
 
-/* 13. УТИЛИТЫ */
+/* /* 13. УТИЛИТЫ */
 .container {
     max-width: 1100px;
     margin: 0 auto;
@@ -322,10 +322,10 @@ footer p {
     border-radius: 6px;
     color: #22543d;
     border: 1px solid #c6f6d5;
-}
+} */
 
 
-/* 16. СКРОЛЛБАР (для современных браузеров) */
+/* /* 16. СКРОЛЛБАР (для современных браузеров) */
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -342,4 +342,4 @@ footer p {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #48bb78;
-}
+} */

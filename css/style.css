@@ -24,7 +24,7 @@ body {
 }
 
 /* 3. ТИПОГРАФИЯ */
-h1 {
+/* h1 {
     color: #1a4731;
     font-size: 2.8rem;
     margin: 40px 0 25px;
@@ -64,7 +64,7 @@ h3 {
 p {
     margin-bottom: 18px;
     font-size: 1.05rem;
-}
+} */
 
 /* 4. ШАПКА И НАВИГАЦИЯ */
 /* header {

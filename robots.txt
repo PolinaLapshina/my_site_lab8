@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /css/
+Disallow: /js/
+Disallow: /images/
+
+# Путь к карте сайта
+Sitemap: https://PolinaLapshina.github.io/my_site_lab8/sitemap.xml
